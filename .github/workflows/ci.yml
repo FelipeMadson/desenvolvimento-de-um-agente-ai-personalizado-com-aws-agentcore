@@ -1,0 +1,21 @@
+name: CI - Python AI Enterprise Microservice
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Validar Sintaxe e Compilação
+        run: python -m py_compile app/main.py
+      - name: Executar Testes Automatizados Nativos
+        run: python -m unittest discover -s tests -p "test_*.py"
