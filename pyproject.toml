@@ -1,0 +1,16 @@
+[project]
+name = "desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore"
+version = "1.0.0"
+description = "Enterprise AI & RAG Microservice para Desenvolvimento de um Agente AI Personalizado com AWS AgentCore"
+authors = [{ name = "Felipe Madison", email = "felipe@madison.dev" }]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "pydantic>=2.9.0",
+    "uvicorn>=0.30.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"

@@ -1,0 +1,46 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Desenvolvimento De Um Agente Ai Personalizado Com Aws Agentcore SBOM",
+  "documentNamespace": "https://github.com/FelipeMadson/desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore/spdxdocs/desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore-1.0.0-977b9f47-0c7d-4a96-bed9-47964d1ac05a",
+  "creationInfo": {
+    "created": "2026-09-30T15:18:12.586Z",
+    "creators": [
+      "Person: Felipe Madison (@FelipeMadson)",
+      "Organization: Autonomous Portfolio Engine — Staff Engineering Grade",
+      "Tool: SecurityCiGenerator-1.0.0"
+    ],
+    "licenseListVersion": "3.21"
+  },
+  "packages": [
+    {
+      "name": "desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore",
+      "SPDXID": "SPDXRef-Package-desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore",
+      "versionInfo": "1.0.0",
+      "packageFileName": "desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore-1.0.0.tar.gz",
+      "packageSupplier": "Person: Felipe Madison (https://github.com/FelipeMadson)",
+      "originator": "Person: Felipe Madison (https://github.com/FelipeMadson)",
+      "downloadLocation": "git+https://github.com/FelipeMadson/desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore.git@v1.0.0",
+      "filesAnalyzed": false,
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "833ce3b81fbd82f011e8b7b8521480e1f5fb5c659473e2cd67baac434d1be8a4"
+        }
+      ],
+      "homepage": "https://github.com/FelipeMadson/desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore",
+      "concludedLicense": "MIT",
+      "declaredLicense": "MIT",
+      "copyrightText": "Copyright (c) 2026 Felipe Madison (@FelipeMadson)",
+      "description": "Enterprise-grade production release for Desenvolvimento De Um Agente Ai Personalizado Com Aws Agentcore, engineered by Felipe Madison."
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Package-desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore",
+      "relationshipType": "DESCRIBES"
+    }
+  ]
+}
