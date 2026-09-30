@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  ai-api:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - SECRET_KEY=enterprise-python-ai-production-key

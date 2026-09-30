@@ -1,0 +1,136 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-09-30T15:18:12.585Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "wrk_desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore_suite",
+      "_type": "workspace",
+      "created": 1790781492585,
+      "modified": 1790781492585,
+      "name": "Desenvolvimento De Um Agente Ai Personalizado Com Aws Agentcore API Suite",
+      "description": "Ambiente Insomnia para Desenvolvimento De Um Agente Ai Personalizado Com Aws Agentcore. Autor: Felipe Madison (@FelipeMadson)",
+      "scope": "collection"
+    },
+    {
+      "_id": "env_desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore_base",
+      "_type": "environment",
+      "parentId": "wrk_desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore_suite",
+      "created": 1790781492585,
+      "modified": 1790781492585,
+      "name": "Local Development",
+      "data": {
+        "base_url": "http://localhost:3000",
+        "api_key": "test-staff-engineer-token-madison"
+      }
+    },
+    {
+      "_id": "req_desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore_1",
+      "_type": "request",
+      "parentId": "wrk_desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore_suite",
+      "created": 1790781492585,
+      "modified": 1790781492585,
+      "name": "1. Health & Liveness Probe",
+      "method": "GET",
+      "url": "{{ _.base_url }}/health",
+      "description": "Verifica a integridade imediata do serviço, tempo de atividade e status do subsistema WAL.",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.api_key }}"
+        }
+      ],
+      "body": {}
+    },
+    {
+      "_id": "req_desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore_2",
+      "_type": "request",
+      "parentId": "wrk_desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore_suite",
+      "created": 1790781492586,
+      "modified": 1790781492586,
+      "name": "2. OpenMetrics / Prometheus Telemetry",
+      "method": "GET",
+      "url": "{{ _.base_url }}/metrics",
+      "description": "Exporta telemetria em formato texto padrão OpenMetrics para raspagem por Prometheus e Grafana.",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.api_key }}"
+        }
+      ],
+      "body": {}
+    },
+    {
+      "_id": "req_desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore_3",
+      "_type": "request",
+      "parentId": "wrk_desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore_suite",
+      "created": 1790781492587,
+      "modified": 1790781492587,
+      "name": "3. Dispatch / Processar Operação — Desenvolvimento De Um Agente Ai Personalizado Com Aws Agentcore",
+      "method": "POST",
+      "url": "{{ _.base_url }}/api/v1/desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore/dispatch",
+      "description": "Executa transação com garantia de atomicidade, validação de integridade e registro no log WAL.",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.api_key }}"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"action\": \"PROCESS_TRANSACTION\",\n  \"payload\": {\n    \"clientId\": \"felipe-madison-tester\",\n    \"timestamp\": \"2026-09-30T15:18:12.585Z\",\n    \"data\": {\n      \"sampleKey\": \"enterprise-payload-sample\",\n      \"priority\": \"HIGH\"\n    }\n  }\n}"
+      }
+    },
+    {
+      "_id": "req_desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore_4",
+      "_type": "request",
+      "parentId": "wrk_desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore_suite",
+      "created": 1790781492588,
+      "modified": 1790781492588,
+      "name": "4. Consulta de Estado Consolidado — Desenvolvimento De Um Agente Ai Personalizado Com Aws Agentcore",
+      "method": "GET",
+      "url": "{{ _.base_url }}/api/v1/desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore/state",
+      "description": "Recupera o estado atualizado em memória e estatísticas de processamento persistidas.",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.api_key }}"
+        }
+      ],
+      "body": {}
+    }
+  ]
+}
