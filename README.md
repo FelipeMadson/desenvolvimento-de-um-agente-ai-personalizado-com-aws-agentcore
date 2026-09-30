@@ -83,7 +83,7 @@ Distribuído sob a licença MIT. Criado por **Felipe Madison**.
 
 ## 🎮 Live Interactive Playground (No Backend Required)
 
-Experimente o simulador em tempo real executando 100% no seu navegador com WebCrypto, Token Bucket e Write-Ahead Logging:
+Experimente o simulador de IA com inferência neural, quantização GGUF (FP16/Q4_K_M) e busca vetorial RAG em tempo real no seu navegador:
 👉 **[Acessar Live Playground do Desenvolvimento De Um Agente Ai Personalizado Com Aws Agentcore](https://felipemadson.github.io/desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore/)**
 
 ## 🖥️ Demonstração em Terminal Vetorial (Execução & Benchmarks)
