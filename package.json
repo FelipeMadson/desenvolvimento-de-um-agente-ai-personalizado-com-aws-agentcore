@@ -1,0 +1,10 @@
+{
+  "name": "desenvolvimento-de-um-agente-ai-personalizado-com-aws-agentcore",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/**/*.test.ts"
+  },
+  "author": "Felipe Madison (@FelipeMadson)",
+  "license": "MIT"
+}
